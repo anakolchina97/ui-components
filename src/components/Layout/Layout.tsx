@@ -1,10 +1,14 @@
-import React from 'react'
-import styles from './App.module.scss'
+import React, { ReactNode } from 'react';
+import styles from './Layout.module.scss';
 
-type Props = {}
-
-export const Layout = (props: Props) => {
-  return (
-    <div className={styles.layout}>Layout</div>
-  )
+interface ILayoutProps {
+  children?: ReactNode;
 }
+
+export const Layout: React.FC<ILayoutProps> = ({ children }) => {
+  return (
+    <div className={styles.layout}>
+      <div className={styles.layoutContainer}>{children}</div>
+    </div>
+  );
+};
