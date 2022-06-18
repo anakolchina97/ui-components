@@ -1,4 +1,5 @@
 import App from './App';
 import Layout from './Layout';
+import Button from './Ui/Button';
 
-export { App, Layout };
+export { App, Layout, Button };
