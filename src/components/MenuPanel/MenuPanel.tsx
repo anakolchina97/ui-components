@@ -15,6 +15,9 @@ export const MenuPanel: React.FC = (props: Props) => {
       <NavLink className={styles.a} to={ROUTES.BUTTON}>
         Button
       </NavLink>
+      <NavLink className={styles.a} to={ROUTES.ACCORDION}>
+        Accordion
+      </NavLink>
     </nav>
   );
 };

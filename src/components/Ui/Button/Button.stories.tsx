@@ -15,5 +15,3 @@ export const Default = () => (
     </div>
   </>
 );
-
-// export const Disabled = () => <Button isDisabled>Disabled</Button>;
