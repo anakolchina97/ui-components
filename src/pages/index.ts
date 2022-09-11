@@ -1,4 +1,4 @@
-import HomePage from './HomePage';
 import ButtonPage from './ButtonPage';
+import Components from './Components';
 
-export { HomePage, ButtonPage };
+export { Components, ButtonPage };

@@ -49,8 +49,11 @@ p {
   margin: 0;
 }
 
-.app {
-  h2 {
-    margin: 25px 0;
-  }
+.appWrap {
+  display: flex;
+  gap: 30px;
+}
+
+.h1 {
+  margin-bottom: 20px;
 }
