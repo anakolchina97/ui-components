@@ -1,21 +1,22 @@
-import Layout from 'components/Layout';
-import React, { MouseEvent } from 'react';
-import { Button } from 'ui-kit';
-import styles from './App.module.scss';
+import Layout from "components/Layout";
+import { Routes, Route } from "react-router-dom";
+import { AccordionPage, ButtonPage, Components } from "pages";
+import { ROUTES } from "routes";
+import MenuPanel from "components/MenuPanel";
 
-type Props = {};
+import styles from "./App.module.scss";
 
-export const App: React.FC = (props: Props) => {
-  const handleButtonClick = (event: MouseEvent) => {
-    console.log('[button click event]', event);
-  };
+export const App = () => {
   return (
-    <div className={styles.app}>
+    <div className={styles.appWrap}>
+      <MenuPanel />
       <Layout>
-        <h1>React TypeScript UI Library</h1>
-        <hr />
-        <h2>Button</h2>
-        <Button onClick={handleButtonClick}>Кнопка</Button>
+        <h1 className={styles.h1}>Ui React Library</h1>
+        <Routes>
+          <Route path={ROUTES.COMPONENTS} element={<Components />} />
+          <Route path={ROUTES.BUTTON} element={<ButtonPage />} />
+          <Route path={ROUTES.ACCORDION} element={<AccordionPage />} />
+        </Routes>
       </Layout>
     </div>
   );
