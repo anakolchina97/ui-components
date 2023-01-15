@@ -1,1 +1,1 @@
-export { AccordionGroup as default } from './AccordionGroup';
+export { AccordionGroup as default } from "./AccordionGroup";

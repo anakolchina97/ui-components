@@ -1,6 +1,6 @@
-import classNames from 'classnames';
-import React, { ReactNode } from 'react';
-import styles from './AccordionGroup.module.scss';
+import classNames from "classnames";
+import React, { ReactNode } from "react";
+import styles from "./AccordionGroup.module.scss";
 
 export interface IAccordionGroupProps {
   className?: string;
@@ -9,7 +9,7 @@ export interface IAccordionGroupProps {
 }
 
 export const AccordionGroup: React.FC<IAccordionGroupProps> = ({
-  title = '',
+  title = "",
   children,
   className,
 }) => {

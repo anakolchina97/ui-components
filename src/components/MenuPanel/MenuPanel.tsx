@@ -1,8 +1,8 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { ROUTES } from 'routes';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { ROUTES } from "routes";
 
-import styles from './MenuPanel.module.scss';
+import styles from "./MenuPanel.module.scss";
 
 type Props = {};
 

@@ -1,8 +1,8 @@
-import React, { DOMAttributes } from 'react';
-import classnames from 'classnames';
-import styles from './Button.module.scss';
+import React, { DOMAttributes } from "react";
+import classnames from "classnames";
+import styles from "./Button.module.scss";
 
-export type ButtonType = 'button' | 'submit' | 'reset';
+export type ButtonType = "button" | "submit" | "reset";
 
 export interface IButtonProps extends DOMAttributes<HTMLButtonElement> {
   className?: string;
@@ -21,11 +21,14 @@ export const Button: React.FC<IButtonProps> = ({
 }) => {
   return (
     <button
-      className={classnames(styles.button, className, { [styles.button__disabled]: isDisabled })}
+      className={classnames(styles.button, className, {
+        [styles.button__disabled]: isDisabled,
+      })}
       disabled={isDisabled}
       type={typeButton}
       onClick={onClick}
-      {...props}>
+      {...props}
+    >
       <span>{children}</span>
     </button>
   );

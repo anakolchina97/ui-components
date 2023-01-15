@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import classNames from 'classnames';
-import { SlideDown } from 'react-slidedown';
+import React, { useState } from "react";
+import classNames from "classnames";
+import { SlideDown } from "react-slidedown";
 
-import 'react-slidedown/lib/slidedown.css';
-import styles from './Accordion.module.scss';
+import "react-slidedown/lib/slidedown.css";
+import styles from "./Accordion.module.scss";
 
 export interface IAccordionProps {
   className?: string;
@@ -14,7 +14,7 @@ export interface IAccordionProps {
 
 export const Accordion: React.FC<IAccordionProps> = ({
   className,
-  title = '',
+  title = "",
   isActive = false,
   children,
 }) => {
@@ -27,7 +27,8 @@ export const Accordion: React.FC<IAccordionProps> = ({
     <div
       className={classNames(styles.Accordion, className, {
         [styles.Accordion__active]: isOpen,
-      })}>
+      })}
+    >
       <div className={styles.AccordionHeader} onClick={handleToggleClick}>
         <div className={styles.AccordionHeaderTitle}>{title}</div>
       </div>

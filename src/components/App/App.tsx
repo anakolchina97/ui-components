@@ -1,10 +1,10 @@
-import Layout from 'components/Layout';
-import { Routes, Route } from 'react-router-dom';
-import { AccordionPage, ButtonPage, Components } from 'pages';
-import { ROUTES } from 'routes';
-import MenuPanel from 'components/MenuPanel';
+import Layout from "components/Layout";
+import { Routes, Route } from "react-router-dom";
+import { AccordionPage, ButtonPage, Components } from "pages";
+import { ROUTES } from "routes";
+import MenuPanel from "components/MenuPanel";
 
-import styles from './App.module.scss';
+import styles from "./App.module.scss";
 
 export const App = () => {
   return (

@@ -1,7 +1,7 @@
-import { Button } from './Button';
-import styles from './Button.module.scss';
+import { Button } from "./Button";
+import styles from "./Button.module.scss";
 
-export default { title: 'Button', component: Button };
+export default { title: "Button", component: Button };
 
 export const Default = () => (
   <>

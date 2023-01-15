@@ -1,1 +1,1 @@
-export { MenuPanel as default } from './MenuPanel';
+export { MenuPanel as default } from "./MenuPanel";

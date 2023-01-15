@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import styles from './Layout.module.scss';
+import React, { ReactNode } from "react";
+import styles from "./Layout.module.scss";
 
 interface ILayoutProps {
   children?: ReactNode;
