@@ -1,7 +1,3 @@
-import React from 'react';
-
-type Props = {};
-
-export const Components = (props: Props) => {
+export const Components = () => {
   return <div>Components</div>;
 };
