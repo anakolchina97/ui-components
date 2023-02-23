@@ -1,9 +1,7 @@
-import { Accordion, AccordionGroup } from 'components';
-import React from 'react';
+import { Accordion, AccordionGroup } from "components";
+import React from "react";
 
-type Props = {};
-
-export const AccordionPage: React.FC = (props: Props) => {
+export const AccordionPage: React.FC = () => {
   return (
     <AccordionGroup title="Группа аккордеонов">
       <Accordion title="Заголовок 1" isActive>

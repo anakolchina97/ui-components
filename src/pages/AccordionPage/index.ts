@@ -1,1 +1,1 @@
-export { AccordionPage as default } from './AccordionPage';
+export { AccordionPage as default } from "./AccordionPage";
